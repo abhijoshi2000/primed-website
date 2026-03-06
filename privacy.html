@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Primed</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo">Primed</a>
+      <div class="nav-links">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="mailto:support@primedapp.info">Support</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="legal">
+    <h1>Privacy Policy</h1>
+    <p class="effective-date">Effective Date: March 3, 2026</p>
+
+    <p>Primed ("we", "our", "us") is a fitness application that uses wearable device data and artificial intelligence to provide personalized training recommendations. This Privacy Policy explains how we collect, use, and protect your information.</p>
+
+    <h2>1. Information We Collect</h2>
+
+    <h3>Account Information</h3>
+    <p>When you sign up, we collect:</p>
+    <ul>
+      <li>Name and email address (via Google Sign-In or Apple Sign-In)</li>
+      <li>Profile information you provide during onboarding (sport, training schedule, fitness goals, experience level)</li>
+    </ul>
+
+    <h3>Health and Fitness Data</h3>
+    <p>With your permission, we access health and fitness data from connected wearable devices:</p>
+    <ul>
+      <li><strong>Apple HealthKit:</strong> Heart rate variability (HRV), resting heart rate (RHR), sleep duration and stages, workout data (type, duration, calories, distance)</li>
+      <li><strong>WHOOP:</strong> Recovery score, HRV, RHR, sleep data, strain score, SpO2, respiratory rate, skin temperature</li>
+    </ul>
+    <p>We only read health data that is necessary to calculate your daily readiness score and generate personalized workout plans. We never sell your health data.</p>
+
+    <h3>Workout Data</h3>
+    <p>When you log workouts in the app, we collect exercises, sets, reps, weights, RPE (rate of perceived exertion), and notes.</p>
+
+    <h3>Device Information</h3>
+    <p>We collect your device's push notification token (for morning readiness notifications) and timezone.</p>
+
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li><strong>Readiness Calculation:</strong> Your wearable data (HRV, sleep, recovery) is used to compute a daily readiness score (0–100) that guides training intensity.</li>
+      <li><strong>AI Workout Generation:</strong> Your profile, readiness score, and training history are sent to our AI system to generate personalized weekly workout plans.</li>
+      <li><strong>Personal Records:</strong> Your workout history is analyzed to detect personal records (PRs) in lifts and cardio activities.</li>
+      <li><strong>Analytics:</strong> Aggregated workout data is used to show you trends, streaks, and progress over time.</li>
+      <li><strong>Notifications:</strong> We use your sleep data to infer wake time and send morning readiness notifications at an appropriate hour.</li>
+    </ul>
+
+    <h2>3. Third-Party Services</h2>
+    <p>We use the following third-party services to operate Primed:</p>
+    <ul>
+      <li><strong>Anthropic (Claude AI):</strong> Your profile information, readiness score, and workout history are sent to Anthropic's API to generate workout plans and coaching recommendations. Anthropic does not use your data to train their models. See <a href="https://www.anthropic.com/privacy">Anthropic's Privacy Policy</a>.</li>
+      <li><strong>Supabase:</strong> Database and authentication provider. Your account data and health information are stored securely in Supabase's cloud infrastructure. See <a href="https://supabase.com/privacy">Supabase's Privacy Policy</a>.</li>
+      <li><strong>RevenueCat:</strong> Subscription and in-app purchase management. RevenueCat processes your purchase history to manage premium feature access. See <a href="https://www.revenuecat.com/privacy">RevenueCat's Privacy Policy</a>.</li>
+      <li><strong>WHOOP:</strong> If you connect your WHOOP account, we access your recovery, sleep, strain, and biometric data via WHOOP's API using OAuth 2.0 authorization. See <a href="https://www.whoop.com/privacy">WHOOP's Privacy Policy</a>.</li>
+      <li><strong>Expo:</strong> Push notification delivery service. Only your device push token is shared. See <a href="https://expo.dev/privacy">Expo's Privacy Policy</a>.</li>
+    </ul>
+
+    <h2>4. Apple HealthKit</h2>
+    <p>Primed integrates with Apple HealthKit to read health and fitness data. In accordance with Apple's requirements:</p>
+    <ul>
+      <li>We do not use HealthKit data for advertising or marketing purposes.</li>
+      <li>We do not sell HealthKit data to third parties.</li>
+      <li>We do not share HealthKit data with third parties for their marketing or advertising purposes.</li>
+      <li>HealthKit data is used solely to provide the app's core functionality: readiness calculation and workout personalization.</li>
+      <li>We may write workout data back to HealthKit with your permission.</li>
+    </ul>
+
+    <h2>5. Data Storage and Security</h2>
+    <ul>
+      <li>Your data is stored in Supabase's cloud database with row-level security (RLS) — you can only access your own data.</li>
+      <li>All data is transmitted over HTTPS (TLS encryption).</li>
+      <li>Authentication uses industry-standard JWT tokens with ES256 signing.</li>
+      <li>OAuth tokens for connected wearables are stored securely and refreshed automatically.</li>
+    </ul>
+
+    <h2>6. Data Retention</h2>
+    <ul>
+      <li>Your data is retained as long as your account is active.</li>
+      <li>When you delete your account, all associated data is permanently deleted, including health vitals, workout history, personal records, and AI-generated plans.</li>
+      <li>Cached data (readiness scores, AI responses) expires automatically and is not retained beyond the cache period.</li>
+    </ul>
+
+    <h2>7. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li><strong>Access:</strong> View all your data within the app (profile, workouts, analytics).</li>
+      <li><strong>Export:</strong> Export your workout data as CSV (available to premium subscribers).</li>
+      <li><strong>Delete:</strong> Delete your account and all associated data at any time from the Profile screen.</li>
+      <li><strong>Disconnect:</strong> Revoke wearable access (WHOOP, HealthKit) at any time through the app or device settings.</li>
+    </ul>
+
+    <h2>8. Children's Privacy</h2>
+    <p>Primed is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
+
+    <h2>9. Not Medical Advice</h2>
+    <p>Primed is a fitness and training tool, not a medical device. Readiness scores, workout recommendations, and recovery insights are for informational purposes only and should not be used as a substitute for professional medical advice, diagnosis, or treatment.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of material changes through the app or by updating the effective date above.</p>
+
+    <h2>11. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy or your data, contact us at:</p>
+    <p><a href="mailto:support@primedapp.info">support@primedapp.info</a></p>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="logo">Primed</span>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="mailto:support@primedapp.info">Contact Support</a>
+      </div>
+      <p class="copyright">&copy; 2026 Primed. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
